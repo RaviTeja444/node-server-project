@@ -1,7 +1,7 @@
 const httpmodule = require('http');
 
 const hostname = '127.0.0.1';
-const portNo = 3000;
+const portNo = process.env.PORT;
 
 const server = httpmodule.createServer((req, res) => {
   res.statusCode = 200;
